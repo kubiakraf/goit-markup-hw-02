@@ -62,7 +62,7 @@ footer {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  text-decoration-line: underline;
+  text-decoration-line: none;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -78,7 +78,6 @@ footer {
   font-size: 44px;
   line-height: 60px;
   text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
