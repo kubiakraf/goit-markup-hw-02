@@ -1,30 +1,102 @@
 body {
   font-family: 'Roboto', 'Raleway', sans-serif;
   font-style: normal;
+  font-weight: 400;
   color: #212121;
   width: 1600px;
+  letter-spacing: 0.03em;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
-ul > li {
-  list-style-type: none;
-  display: inline;
+.logo-back {
+  color: #000;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  padding-right: 93px;
 }
 
-header {
+.logo-front {
+  color: #2196f3;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  padding-left: 215px;
+}
+
+.header-nav {
   display: inline-flex;
   height: 80px;
 }
 
-header > span {
-  padding: 32px 215px 32px 195px;
+.article-items {
+  list-style-type: none;
+  display: flex;
 }
 
-h2 {
+.header-contact {
+  padding: 32px 215px 32px 190px;
+}
+
+.header-primary {
+  color: #fff;
+  background-color: #2f303a;
+  height: 600px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36em;
   text-align: center;
+  text-transform: uppercase;
+  padding: 200px 0px 0px 0px;
 }
 
-section {
-  padding: 0 215px 0 215px;
+.header-button {
+  background-color: #2196f3;
+  color: #fff;
+  padding: 10px 40px 10px 40px;
+}
+
+.article-distance {
+  padding: 94px 215px 0px 215px;
+}
+
+.article-title {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.article-content {
+  font-size: 14px;
+  line-height: 1.71em;
+  color: #757575;
+}
+
+.article-column > ul {
+  padding: 0;
+  margin: 0;
+}
+
+.article-column {
+  column-count: 4;
+  column-gap: 30px;
+}
+
+.frame-distance {
+  padding: 94px 215px 94px 215px;
+}
+
+.section-items {
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16em;
 }
 
 .link {
@@ -37,9 +109,8 @@ section {
   padding-bottom: 27px;
 }
 
-h3 {
-  font-weight: 700;
-  font-size: 14px;
+.active-tab {
+  color: #2196f3;
 }
 
 .link:hover {
@@ -50,47 +121,21 @@ h3 {
   color: #2196f3;
 }
 
-button {
-  border-style: none;
+.every-buttons {
   padding: 6px 22px 6px 22px;
-  border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 63em;
+  line-height: 1.63em;
   text-align: center;
-  letter-spacing: 0.03em;
   cursor: pointer;
+  border-radius: 4px;
+  border-style: none;
 }
 
-button:hover,
-button:focus {
+.every-buttons:hover,
+.every-buttons:focus {
   background-color: #2196f3;
   color: #fff;
-}
-
-.logo-front {
-  color: #2196f3;
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  padding-left: 215px;
-}
-
-.logo-back {
-  color: #000;
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  margin-top: 24px;
-  padding-right: 93px;
-}
-
-.logo-backfooter {
-  color: #fff;
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  margin-top: 60px;
 }
 
 .our-team {
@@ -99,8 +144,6 @@ button:focus {
 
 .card {
   text-align: center;
-  font-size: 16px;
-  letter-spacing: 0.03em;
   width: 270px;
   height: 368px;
   background: #fff;
@@ -108,6 +151,7 @@ button:focus {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   border-style: none;
+  margin: 0;
 }
 
 .card-name {
@@ -120,16 +164,29 @@ button:focus {
   font-weight: 400;
 }
 
-footer {
+.footer-theme {
   background-color: #2f303a;
   height: 252px;
   color: #fff;
+  position: relative;
+}
+
+.footer-items {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.logo-backfooter {
+  color: #fff;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
 }
 
 .link-footer {
   font-size: 14px;
-  line-height: 1, 71;
-  letter-spacing: 1, 713em;
+  line-height: 1.71em;
   text-decoration-line: none;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -142,29 +199,35 @@ footer {
   color: #2196f3;
 }
 
-.header-primary {
-  color: #fff;
-  background-color: #2f303a;
-  height: 600px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1, 36em;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 275px 0px 0px 0px;
-}
-
-.header-button {
-  background-color: #2196f3;
-  color: #fff;
-  padding: 10px 40px 10px 40px;
-}
-
-address {
+.address-content {
   font-style: normal;
   font-size: 14px;
-  line-height: 1, 71;
-  letter-spacing: 0.03em;
+  line-height: 1.71em;
   padding-left: 215px;
-  padding-top: 111px;
+  padding-top: 20px;
+}
+
+/* Karty w zakładce portfolio */
+
+.portfolio-card {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eeeeee;
+  margin: 0;
+}
+
+.portcard-caption {
+  margin: 20px 24px;
+}
+
+.portcard-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2em;
+}
+
+.portcard-category {
+  font-size: 16px;
+  line-height: 1.88em;
+  color: #757575;
 }
